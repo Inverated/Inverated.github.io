@@ -3228,6 +3228,8 @@ input, select, textarea {
         height: fit-content;
         gap: 1rem;
         scroll-behavior: smooth;
+        overflow-y: hidden;
+        overflow-x: auto;
     }
 
     .scroll-row article {
