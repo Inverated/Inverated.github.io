@@ -195,7 +195,7 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 3em 0;
+			margin: 2em 0;
 		}
 
 	blockquote {
@@ -2072,7 +2072,7 @@ input, select, textarea {
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
+				color: #ffffff;
 				content: 'View';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2554,21 +2554,20 @@ input, select, textarea {
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 	}
 
 		.work-item .image {
-			margin: 0 0 1.5em 0;
+			margin: 0 0 0 0;
 		}
 
 		.work-item h3 {
 			font-size: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0 0 0 0;
 		}
 
 		.work-item p {
 			font-size: 0.8em;
-			line-height: 1.5em;
 			margin: 0;
 		}
 
@@ -2604,7 +2603,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 25%;
 	}
 
 		#header > * {
@@ -2682,10 +2681,10 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
-		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
+		margin-left: 25%;
+		max-width: 84em;
+		padding: 4em 4em 4em 4em;
+		width: calc(100% - 25%);
 	}
 
 		#main > section {
@@ -3141,7 +3140,7 @@ input, select, textarea {
 			}
 
 			header.major h2 {
-				font-size: 1.35em;
+				font-size: 1em;
 			}
 
 		/* List */
@@ -3173,12 +3172,12 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
+				padding: 1.25em 1.5em 0.25em 1.5em;
 			}
 
 				#main > section {
-					margin: 2.25em 0 0 0;
-					padding: 2.25em 0 0 0;
+					margin: 1.25em 0 0 0;
+					padding: 1.25em 0 0 0;
 				}
 
 		/* Poptrox */
@@ -3219,3 +3218,45 @@ input, select, textarea {
 			}
 
 	}
+
+    .scroll-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow: auto;
+        height: fit-content;
+        gap: 1rem;
+        scroll-behavior: smooth;
+    }
+
+    .scroll-row article {
+        flex: 0 0 300px;
+    }
+
+    .hob-img {
+        height: 200px;
+        aspect-ratio: auto;
+    }
+
+    .show-more {
+        background: none; 
+        border: none;      
+        font-size: 16px;
+        text-align: center;   
+        cursor: pointer;       
+        padding: 0;
+        display: inline-block;
+        text-decoration: underline;
+		color: #a2a2a2;
+    }
+
+    hr {
+        padding: 0 0 0 0;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .link-icon {
+        appearance: none;
+        text-decoration: none;
+    }
