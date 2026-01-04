@@ -7,10 +7,11 @@
 <html>
 
 <head>
-    <title>Strata by HTML5 UP</title>
+    <title>Hello</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
 <body class="is-preload">
@@ -25,8 +26,7 @@
 
     <!-- Main -->
     <div id="main">
-
-        <section id="one">
+        <section data-title="Intro">
             <header class="major">
                 <h2>Who am i?</h2>
             </header>
@@ -42,25 +42,39 @@
             </ul>
         </section>
 
-        <section id="two">
+        <div onclick="closePopup()"
+            style="display: none; flex-direction: column; position: fixed; top:0; left:0; z-index: 1000; width:100%; height:100%; background-color: rgba(100, 100, 100, 0.429); justify-content: center; align-items: center;"
+            id="popup">
+            <div onclick="event.stopPropagation()" style="width: fit-content;">
+                <div
+                    style="position: relative; flex-direction: row; max-width: 100%; display: flex; align-items: center; justify-content: center;">
+                    <button onclick="navigate(-1)" class="left-nav">&#60;</button>
+                    <img id="popup-img" style="max-width:70vw; max-height:70vh; object-fit:contain;" />
+                    <button onclick="navigate(1)" class="right-nav">&#62;</button>
+                </div>
+                <div style="background-color: aliceblue; padding: 10px; width: 100%; box-shadow: 0 0 10px #000; text-align: center;"
+                    id="popup-desc"></div>
+            </div>
+
+        </div>
+
+        <section data-title="Past Work">
             <h2>Past Work</h2>
             <div class="col">
-                <h3>PDF and Image Converter <a href="https://github.com/Inverated/PDF-and-Image-Converter-With-UI" target="_blank" class="link-icon">🔗</a>:</h3>
+                <h3>PDF and Image Converter <a href="https://github.com/Inverated/PDF-and-Image-Converter-With-UI"
+                        target="_blank" class="link-icon">🔗</a>:</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/pdf-img-cvter/main.png" class="image fit thumb"><img
-                                src="images/fulls/pdf-img-cvter/main.png" alt="" /></a>
-                        <h3 hidden>Main app</h3>
+                                src="images/fulls/pdf-img-cvter/main.png" alt="Main app" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/pdf-img-cvter/preview.png" class="image fit thumb"><img
-                                src="images/fulls/pdf-img-cvter/preview.png" alt="" /></a>
-                        <h3 hidden>Example</h3>
+                                src="images/fulls/pdf-img-cvter/preview.png" alt="Example" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/pdf-img-cvter/flashbang_main.png" class="image fit thumb"><img
-                                src="images/fulls/pdf-img-cvter/flashbang_main.png" alt="" /></a>
-                        <h3 hidden>Light mode</h3>
+                                src="images/fulls/pdf-img-cvter/flashbang_main.png" alt="Light mode" /></a>
                     </article>
                 </div>
                 <p> All in one PDF & Image merger / re-order / re-sizing / converter in an app.
@@ -70,32 +84,28 @@
 
                 <hr>
 
-                <h3>Text to QR (or any scannable) code <a href="https://github.com/Inverated/Text-to-QR-Code" target="_blank" class="link-icon">🔗</a>:</h3>
+                <h3>Text to QR (or any scannable) code <a href="https://github.com/Inverated/Text-to-QR-Code"
+                        target="_blank" class="link-icon">🔗</a>:</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/qr-cvter/main.png" class="image fit thumb"><img
-                                src="images/fulls/qr-cvter/main.png" alt="" /></a>
-                        <h3 hidden>Main app</h3>
+                                src="images/fulls/qr-cvter/main.png" alt="Main app" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/qr-cvter/scanning.png" class="image fit thumb"><img
-                                src="images/fulls/qr-cvter/scanning.png" alt="" /></a>
-                        <h3 hidden>Example of scanning</h3>
+                                src="images/fulls/qr-cvter/scanning.png" alt="Example of scanning" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/qr-cvter/qr-example.png" class="image fit thumb"><img
-                                src="images/fulls/qr-cvter/qr-example.png" alt="" /></a>
-                        <h3 hidden>Example of QR-code generation</h3>
+                                src="images/fulls/qr-cvter/qr-example.png" alt="Example of QR-code generation" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/qr-cvter/ba-code.png" class="image fit thumb"><img
-                                src="images/fulls/qr-cvter/ba-code.png" alt="" /></a>
-                        <h3 hidden>Example of barcode generation</h3>
+                                src="images/fulls/qr-cvter/ba-code.png" alt="Example of barcode generation" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/qr-cvter/other.png" class="image fit thumb"><img
-                                src="images/fulls/qr-cvter/other.png" alt="" /></a>
-                        <h3 hidden>Others</h3>
+                                src="images/fulls/qr-cvter/other.png" alt="Others" /></a>
                     </article>
                 </div>
                 <p> Create and scan code (QR codes, barcodes, etc.).
@@ -106,47 +116,46 @@
 
                 <hr>
 
-                <h3>Auto-complete trie <a href="https://github.com/Inverated/Trie-autocomplete" target="_blank" class="link-icon">🔗</a>:</h3>
+                <h3>Auto-complete trie <a href="https://github.com/Inverated/Trie-autocomplete" target="_blank"
+                        class="link-icon">🔗</a>:</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/trie/example.png" class="image fit thumb"><img
-                                src="images/fulls/trie/example.png" alt="" /></a>
-                        <h3 hidden>Example</h3>
+                                src="images/fulls/trie/example.png" alt="Example" /></a>
                     </article>
                 </div>
                 <p> CLI auto-complete trie application built using Python.
                     Features include adding and providing auto-complete suggestions based on user input.
-                    Designed for efficiency and ease of use in managing large sets of words/phrases. Preloaded with > 450,000 words.
+                    Designed for efficiency and ease of use in managing large sets of words/phrases. Preloaded with >
+                    450,000 words.
                 </p>
 
                 <hr>
 
-                <h3>Bank Sync <a href="https://github.com/Inverated/BankSync" target="_blank" class="link-icon">🔗</a>:</h3>
+                <h3>Bank Sync <a href="https://github.com/Inverated/BankSync" target="_blank" class="link-icon">🔗</a>:
+                </h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/banksync/home.png" class="image fit thumb"><img
-                                src="images/fulls/banksync/home.png" alt="" /></a>
-                        <h3 hidden>Home Page</h3>
+                                src="images/fulls/banksync/home.png" alt="Home Page" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/banksync/home2.png" class="image fit thumb"><img
-                                src="images/fulls/banksync/home2.png" alt="" /></a>
-                        <h3 hidden>Supported Banks</h3>
+                                src="images/fulls/banksync/home2.png" alt="Supported Banks" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/banksync/uploading.png" class="image fit thumb"><img
-                                src="images/fulls/banksync/uploading.png" alt="" /></a>
-                        <h3 hidden>Document Uploading and Parsing</h3>
+                                src="images/fulls/banksync/uploading.png" alt="Document Uploading and Parsing" /></a>
+                    </article>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/banksync/past-transaction-download.png" class="image fit thumb"><img
-                                src="images/fulls/banksync/past-transaction-download.png" alt="" /></a>
-                        <h3 hidden>Past Transaction Download</h3>
+                                src="images/fulls/banksync/past-transaction-download.png"
+                                alt="Past Transaction Download" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/banksync/custom-filter.png" class="image fit thumb"><img
-                                src="images/fulls/banksync/custom-filter.png" alt="" /></a>
-                        <h3 hidden>Custom Filter Logic</h3>
+                                src="images/fulls/banksync/custom-filter.png" alt="Custom Filter Logic" /></a>
                     </article>
                 </div>
                 <p> Full stack web application to sync bank transactions from multiple banks into one platform.
@@ -156,8 +165,9 @@
                 </p>
 
             </div>
+        </section>
 
-            <hr>
+        <section data-title="Ongoing Work">
             <div>
                 <h3>Ongoing/Future Work</h3>
                 <ul>
@@ -168,18 +178,69 @@
             </div>
 
             <br />
-            <hr><br />
+        </section>
 
+
+        <section data-title="Community">
+            <h2>Community</h2>
+            <div class="col">
+                <h3>Peer Student Supporter @ SoC NUS</h3>
+                <div class="scroll-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/pss/p1.jpg" class="image fit thumb hob-img"><img
+                                src="images/fulls/pss/p1.jpg" alt="Y1 Sem 2" /></a>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/pss/p2.jpg" class="image fit thumb hob-img"><img
+                                src="images/fulls/pss/p2.jpg" alt="Y2 Sem 1" /></a>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/pss/p3.jpg" class="image fit thumb hob-img"><img
+                                src="images/fulls/pss/p3.jpg" alt="Others" /></a>
+                    </article>
+                </div>
+                <p> As a Peer Student Supporter at SoC NUS, I provided guidance and support to fellow students,
+                    helping them navigate academic challenges and fostering a collaborative learning environment.
+                </p>
+                <hr>
+                <h3>Anti-Scam <a
+                        href="https://www.facebook.com/NusSchoolOfComputing/photos/our-first-anti-scam-workshop-kicked-off-at-west-coast-community-centre-with-scam/1188557436641865/"
+                        target="_blank" class="link-icon">🔗</a>:</h3>
+                <div class="scroll-row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/antiscam/scam1.jpg" class="image fit thumb hob-img"><img
+                                src="images/fulls/antiscam/scam1.jpg" alt="See link above for article" /></a>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/antiscam/scam2.jpg" class="image fit thumb hob-img"><img
+                                src="images/fulls/antiscam/scam2.jpg" alt="Tamil Workshop" /></a>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <a href="images/fulls/antiscam/scam3.jpg" class="image fit thumb hob-img"><img
+                                src="images/fulls/antiscam/scam3.jpg" alt="Tamil Workshop" /></a>
+                    </article>
+                </div>
+                <p> Volunteered to conduct anti-scam workshops targeted at the elderly community.
+                    Aimed to educate them on recognizing and avoiding common scams, thereby enhancing their online
+                    safety and awareness.
+                </p>
+                <hr>
+            </div>
+        </section>
+
+        <section data-title="Hobby">
             <h2>Hobby?</h2>
             <div class="col">
                 <h3>Origami</h3>
                 <p><span class="image left">
-                    <div class="scroll-row" style="flex: auto; flex-direction: row; overflow: scroll; display: flex; gap: 10px;">
-                        <img class="hob-img" src="images/fulls/hob/ori1.jpg" alt="" />
-                        <img class="hob-img" src="images/fulls/hob/ori2.jpg" alt="" /> 
-                        <img class="hob-img" src="images/fulls/hob/ori3.jpg" alt="" /> 
-                    </div></span>
-                    Doing simple origami here and there. As part of the origami club and peer student supporter in NUS, 
+                        <div class="scroll-row"
+                            style="flex: auto; flex-direction: row; overflow: scroll; display: flex; gap: 10px;">
+                            <img class="hob-img" src="images/fulls/hob/ori1.jpg" alt="" />
+                            <img class="hob-img" src="images/fulls/hob/ori2.jpg" alt="" />
+                            <img class="hob-img" src="images/fulls/hob/ori3.jpg" alt="" />
+                        </div>
+                    </span>
+                    Doing simple origami here and there. As part of the origami club and peer student supporter in NUS,
                     I decorate the common room with origami from time to time to lighten up the atmosphere.
                 </p>
             </div>
@@ -188,37 +249,33 @@
             <div class="col">
                 <h3><s>Fixing </s>Dismantling and sometimes fixing stuff</h3>
 
-                <h4>Secondary Monitor from old laptop</h4>
+                <h3>Secondary Monitor from old laptop</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/tear5a.jpg" class="image fit thumb"><img class="hob-img"
-                                src="images/fulls/hob/tear5a.jpg" alt="" /></a>
-                        <h3 hidden>Dismantle</h3>
+                                src="images/fulls/hob/tear5a.jpg" alt="Dismantle" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/tear5b.jpg" class="image fit thumb"><img class="hob-img"
-                                src="images/fulls/hob/tear5b.jpg" alt="" /></a>
-                        <h3 hidden>Removing useless components</h3>
+                                src="images/fulls/hob/tear5b.jpg" alt="Removing useless components" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/tear5c.jpg" class="image fit thumb"><img class="hob-img"
-                                src="images/fulls/hob/tear5c.jpg" alt="" /></a>
-                        <h3 hidden>Controller board (Forgot to take a final pic, has broken since)</h3>
+                                src="images/fulls/hob/tear5c.jpg"
+                                alt="Controller board (Forgot to take a final pic, has broken since)" /></a>
                     </article>
                 </div>
                 <hr>
 
-                <h4>DAP Spicy Pillow Replacement</h4>
+                <h3>DAP Spicy Pillow Replacement</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/tear3a.jpg" class="image fit thumb"><img class="hob-img"
-                                src="images/fulls/hob/tear3a.jpg" alt="" /></a>
-                        <h3 hidden>B4</h3>
+                                src="images/fulls/hob/tear3a.jpg" alt="Before" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/tear3b.jpg" class="image fit thumb"><img class="hob-img"
-                                src="images/fulls/hob/tear3b.jpg" alt="" /></a>
-                        <h3 hidden>After</h3>
+                                src="images/fulls/hob/tear3b.jpg" alt="After" /></a>
                     </article>
                 </div>
                 <hr>
@@ -228,13 +285,11 @@
                     <div class="scroll-row">
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear2a.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear2a.jpg" alt="" /></a>
-                            <h3 hidden>Broken contact</h3>
+                                    src="images/fulls/hob/tear2a.jpg" alt="Broken contact" /></a>
                         </article>
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear2b.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear2b.jpg" alt="" /></a>
-                            <h3 hidden>(Badly) Scrapped to expose wire</h3>
+                                    src="images/fulls/hob/tear2b.jpg" alt="(Badly) Scrapped to expose wire" /></a>
                         </article>
                     </div>
                     <hr>
@@ -242,18 +297,16 @@
                     <div class="scroll-row">
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear6a.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear6a.jpg" alt="" /></a>
-                            <h3 hidden>Dismantle</h3>
+                                    src="images/fulls/hob/tear6a.jpg" alt="Dismantle" /></a>
                         </article>
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear6b.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear6b.jpg" alt="" /></a>
-                            <h3 hidden>Removing useless components</h3>
+                                    src="images/fulls/hob/tear6b.jpg" alt="Removing useless components" /></a>
                         </article>
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear6c.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear6c.jpg" alt="" /></a>
-                            <h3 hidden>Controller board (Forgot to take a final pic, has broken since)</h3>
+                                    src="images/fulls/hob/tear6c.jpg"
+                                    alt="Controller board (Forgot to take a final pic, has broken since)" /></a>
                         </article>
                     </div>
                     <hr>
@@ -262,13 +315,11 @@
                     <div class="scroll-row">
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear4a.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear4a.jpg" alt="" /></a>
-                            <h3 hidden>B4</h3>
+                                    src="images/fulls/hob/tear4a.jpg" alt="Before" /></a>
                         </article>
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear4b.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear4b.jpg" alt="" /></a>
-                            <h3 hidden>After</h3>
+                                    src="images/fulls/hob/tear4b.jpg" alt="After" /></a>
                         </article>
                     </div>
                     <hr>
@@ -277,13 +328,21 @@
                     <div class="scroll-row">
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear1a.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear1a.jpg" alt="" /></a>
-                            <h3 hidden>Before</h3>
+                                    src="images/fulls/hob/tear1a.jpg" alt="Before" /></a>
                         </article>
                         <article class="col-6 col-12-xsmall work-item">
                             <a href="images/fulls/hob/tear1b.jpg" class="image fit thumb"><img class="hob-img"
-                                    src="images/fulls/hob/tear1b.jpg" alt="" /></a>
-                            <h3 hidden>After</h3>
+                                    src="images/fulls/hob/tear1b.jpg" alt="After" /></a>
+                        </article>
+                    </div>
+                    <hr>
+
+                    <h4>HDD</h4>
+                    <div class="scroll-row">
+                        <article class="col-6 col-12-xsmall work-item">
+                            <a href="images/fulls/hob/tear7.jpg" class="image fit thumb"><img class="hob-img"
+                                    src="images/fulls/hob/tear7.jpg"
+                                    alt="Broke it telekinetically while sleeping" /></a>
                         </article>
                     </div>
                     <hr>
@@ -291,45 +350,58 @@
                 <div width="100%" style="height:20px; justify-content: center; align-items: center; display: flex;">
                     <button class="show-more" onclick="toggleShowHob()">Show More</button>
                 </div>
+
                 <hr>
 
-            </div>
-
-            <div class="col">
                 <h3>Metal Puzzle</h3>
-                    <div class="scroll-row">
+                <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/metal4.jpg" class="image fit thumb"><img
-                                src="images/fulls/hob/metal4.jpg" alt="" /></a>
-                        <h3 hidden>Kar</h3>
+                                src="images/fulls/hob/metal4.jpg" alt="Kar" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/metal3.jpg" class="image fit thumb"><img
-                                src="images/fulls/hob/metal3.jpg" alt="" /></a>
-                        <h3 hidden>Motorbike</h3>
+                                src="images/fulls/hob/metal3.jpg" alt="Motorbike" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/metal2.jpg" class="image fit thumb"><img
-                                src="images/fulls/hob/metal2.jpg" alt="" /></a>
-                        <h3 hidden>tank</h3>
+                                src="images/fulls/hob/metal2.jpg" alt="Tank" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
                         <a href="images/fulls/hob/metal1.jpg" class="image fit thumb"><img
-                                src="images/fulls/hob/metal1.jpg" alt="" /></a>
-                        <h3 hidden>Building</h3>
+                                src="images/fulls/hob/metal1.jpg" alt="Building" /></a>
                     </article>
                 </div>
-                <p>Cheap AliExpress metal puzzles.</p>
+                <p>Random cheap AliExpress metal puzzles.</p>
+            </div>
 
+        </section>
+
+        <section data-title="Others">
+            <div id="otherSection" style="user-select: none; -webkit-user-select: none;" class="lastSec"
+                onclick="crack()">
+                <h2>Others</h2>
+                <p>
+                    Byee. Nothing to see here.
+                </p>
+            </div>
+            <br />
+            <div hidden id="extraStuff" class="col">
+                <h2>Extra Stuff</h2>
+                <div>
+                    <h3>Cooking & Baking</h3>
+                    <div class="scroll-row" id="bake"></div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h3>Random Photos <a href="https://www.google.com/maps/contrib/115996496529495531651"
+                            target="_blank" class="link-icon">🔗</a>:</h3>
+                    <div class="scroll-row" id="fun"></div>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>Others</h2>
-            <p>
-                Byee
-            </p>
-        </section>
-
     </div>
 
     <!-- Footer -->
@@ -345,20 +417,16 @@
             </ul>
             <ul class="copyright">
                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                <li>Tested with Chrome or Firefox. Opera a bit off</li>
             </ul>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
 </body>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/main.js"></script>
 <script>
     const scrollRows = document.querySelectorAll('.scroll-row')
         .forEach(scrollRow => {
@@ -386,11 +454,59 @@
                     window.scrollBy({
                         top: event.deltaY,
                         left: 0,
-                        behavior: "smooth"
+                        behavior: "instant"
                     });
                 }
             }, { passive: false });
         });
+
+    let images = [...document.querySelectorAll('.work-item img')];
+    var idx = -1;
+
+    function navigate(direction) {
+        if (idx == -1) return;
+        var temp = (idx + direction) % images.length;
+        if (temp < 0) temp += images.length;
+        const img = images[temp];
+
+        if (images[idx].closest("div") === images[temp].closest("div")) {
+            idx = temp;
+            popupImg.src = img.src;
+            popupDesc.textContent = img.alt || "(No description)";
+        }
+
+    }
+
+    const popupImg = document.getElementById('popup-img');
+    const popup = document.getElementById('popup');
+    const popupDesc = document.getElementById('popup-desc');
+    document.addEventListener("click", (e) => {
+        const img = e.target.closest("article.work-item")?.querySelector("img");
+        if (img) {
+            e.preventDefault();
+            popup.style.display = "flex";
+            popupImg.src = img.src;
+            popupDesc.textContent = img.alt || "(No description)";
+            idx = images.indexOf(img);
+        }
+
+    });
+
+    function closePopup() {
+        popup.style.display = 'none';
+        idx = -1;
+    }
+
+    document.addEventListener("keydown", (e) => {
+        if (popup.style.display !== "flex") return;
+        if (e.key === "ArrowLeft") {
+            navigate(-1);
+        } else if (e.key === "ArrowRight") {
+            navigate(1);
+        } else if (e.key === "Escape") {
+            closePopup();
+        }
+    });
 
     function toggleShowHob() {
         const hobMoreDiv = document.getElementById('hob-more');
@@ -402,6 +518,103 @@
             hobMoreDiv.setAttribute('hidden', '');
             button.textContent = 'Show More';
         }
+    }
+
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+        let currentTitle = "My Site";
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 100 && rect.bottom >= 100) {
+                currentTitle = section.dataset.title || currentTitle;
+            }
+        });
+
+        document.title = currentTitle;
+    });
+
+
+
+    const other = document.getElementById("otherSection");
+    var stage = 6;
+    var clicked = 0;
+
+    function crack() {
+        if (stage <= 1) {
+            console.log("Cracked!");
+            other.setAttribute('hidden', '');
+            stage = 0;
+            showHidden();
+            return;
+        }
+        if (clicked < stage / 2) {
+            clicked += 1;
+            return;
+        } else {
+            clicked = 0;
+        }
+        stage -= 1;
+        other.style.backgroundImage = `url('images/fulls/transition/crack${stage}.png')`;
+    }
+
+    // Observe when last section is out of view
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    stage = 6;
+                    clicked = 0;
+                    other.style.backgroundImage = ""
+                }
+            });
+        },
+        {
+            threshold: 0.6
+        }
+    );
+    observer.observe(other);
+
+    function showHidden() {
+        const extraStuff = document.getElementById("extraStuff");
+        extraStuff.removeAttribute('hidden');
+
+        const bake = document.getElementById("bake");
+        for (let i = 13; i > 0; i--) {
+            const article = document.createElement("article");
+            article.className = "col-6 col-12-xsmall work-item";
+            const a = document.createElement("a");
+            a.className = "image fit thumb";
+            a.href = `images/fulls/hob/bake/bake${i}.jpg`;
+            const img = document.createElement("img");
+            img.src = `images/fulls/hob/bake/bake${i}.jpg`;
+            a.appendChild(img);
+            article.appendChild(a);
+            bake.appendChild(article);
+        }
+        let p = document.createElement("p")
+        p.textContent = "Used to bake & cook.";
+        bake.parentElement.appendChild(p);
+
+        const fun = document.getElementById("fun");
+        for (let i = 11; i > 0; i--) {
+            const article = document.createElement("article");
+            article.className = "col-6 col-12-xsmall work-item hob-img";
+            const a = document.createElement("a");
+            a.className = "image fit thumb";
+            a.href = `images/fulls/hob/fun/fun${i}.jpg`;
+            const img = document.createElement("img");
+            img.src = `images/fulls/hob/fun/fun${i}.jpg`;
+            a.appendChild(img);
+            article.appendChild(a);
+            fun.appendChild(article);
+        }
+        p = document.createElement("p")
+        p.textContent = "Photography of random stuff. Posted on google map reviews only.";
+        fun.parentElement.appendChild(p);
+
+        images = [...document.querySelectorAll('.work-item img')];
     }
 </script>
 

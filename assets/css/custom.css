@@ -1,0 +1,90 @@
+.scroll-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow: auto;
+    height: fit-content;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.scroll-row article {
+    flex: 0 0 250px;
+}
+
+.hob-img {
+    height: 250px;
+    width: auto;
+    aspect-ratio: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.show-more {
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    text-decoration: underline;
+    color: #a2a2a2;
+}
+
+hr {
+    padding: 0 0 0 0;
+    margin: 1rem 0 1rem 0;
+}
+
+.link-icon {
+
+}
+
+.left-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.637), transparent);
+    border: none;
+    width: 15%;
+    color: gray;
+    font-size: 1rem;
+}
+
+.left-nav:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    transition: all;
+}
+
+.right-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.637), transparent);
+    border: none;
+    width: 15%;
+    color: gray;
+    font-size: 1rem;
+}
+
+.right-nav:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    transition: all;
+}
+
+.lastSec {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 200px;
+    cursor: crosshair;
+}
