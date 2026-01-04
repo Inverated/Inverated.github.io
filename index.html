@@ -20,7 +20,8 @@
     <header id="header">
         <div class="inner">
             <a href="#" class="image avatar"><img src="images/me.png" alt="" /></a>
-            <h1><strong>I am Qian Fu</strong> :( <br /></h1>
+            <h1><strong>I am Qian Fu</strong> :&#40; </h1>
+                <p>Here is my portfolio</p>
         </div>
     </header>
 
@@ -187,7 +188,7 @@
                 <h3>Peer Student Supporter @ SoC NUS</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="images/fulls/pss/p1.jpg" class="image fit thumb hob-img"><img
+                        <a href="images/fulls/pss/p1.jpg" class="image fit thumb"><img
                                 src="images/fulls/pss/p1.jpg" alt="Y1 Sem 2" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
@@ -208,15 +209,15 @@
                         target="_blank" class="link-icon">🔗</a>:</h3>
                 <div class="scroll-row">
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="images/fulls/antiscam/scam1.jpg" class="image fit thumb hob-img"><img
+                        <a href="images/fulls/antiscam/scam1.jpg" class="image fit thumb"><img
                                 src="images/fulls/antiscam/scam1.jpg" alt="See link above for article" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="images/fulls/antiscam/scam2.jpg" class="image fit thumb hob-img"><img
+                        <a href="images/fulls/antiscam/scam2.jpg" class="image fit thumb"><img
                                 src="images/fulls/antiscam/scam2.jpg" alt="Tamil Workshop" /></a>
                     </article>
                     <article class="col-6 col-12-xsmall work-item">
-                        <a href="images/fulls/antiscam/scam3.jpg" class="image fit thumb hob-img"><img
+                        <a href="images/fulls/antiscam/scam3.jpg" class="image fit thumb"><img
                                 src="images/fulls/antiscam/scam3.jpg" alt="Tamil Workshop" /></a>
                     </article>
                 </div>
@@ -235,9 +236,15 @@
                 <p><span class="image left">
                         <div class="scroll-row"
                             style="flex: auto; flex-direction: row; overflow: scroll; display: flex; gap: 10px;">
-                            <img class="hob-img" src="images/fulls/hob/ori1.jpg" alt="" />
-                            <img class="hob-img" src="images/fulls/hob/ori2.jpg" alt="" />
-                            <img class="hob-img" src="images/fulls/hob/ori3.jpg" alt="" />
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/hob/ori1.jpg" class="image fit thumb"><img class="hob-img" src="images/fulls/hob/ori1.jpg" alt="🐦" /></a>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/hob/ori2.jpg" class="image fit thumb"><img class="hob-img" src="images/fulls/hob/ori2.jpg" alt="🦫" /></a>
+                            </article>
+                            <article class="col-6 col-12-xsmall work-item">
+                                <a href="images/fulls/hob/ori3.jpg" class="image fit thumb"><img class="hob-img" src="images/fulls/hob/ori3.jpg" alt="🦇👻" /></a>
+                            </article>
                         </div>
                     </span>
                     Doing simple origami here and there. As part of the origami club and peer student supporter in NUS,
@@ -598,6 +605,7 @@
         bake.parentElement.appendChild(p);
 
         const fun = document.getElementById("fun");
+        const alts = ["Skipped", "Not so funny when its your own device now is it", "", "", "", "", "", "", "", "", "", ""];
         for (let i = 11; i > 0; i--) {
             const article = document.createElement("article");
             article.className = "col-6 col-12-xsmall work-item hob-img";
@@ -606,6 +614,8 @@
             a.href = `images/fulls/hob/fun/fun${i}.jpg`;
             const img = document.createElement("img");
             img.src = `images/fulls/hob/fun/fun${i}.jpg`;
+            img.alt = alts[i];
+            console.log(img.alt)
             a.appendChild(img);
             article.appendChild(a);
             fun.appendChild(article);
